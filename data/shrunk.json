@@ -1,5 +1,22 @@
 [
-  { "ID": 1, "EN": "the", "ES": "el" },
-  { "ID": 2, "EN": "of", "ES": "de" },
-  { "ID": 3, "EN": "and", "ES": "y" }
+  {
+    "ID": 1,
+    "EN": "the",
+    "ES": "el"
+  },
+  {
+    "ID": 2,
+    "EN": "of",
+    "ES": "de"
+  },
+  {
+    "ID": 3,
+    "EN": "and",
+    "ES": "y"
+  },
+  {
+    "ID": 4,
+    "EN": "scenery",
+    "ES": "escenario"
+  }
 ]
