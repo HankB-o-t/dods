@@ -11,4 +11,4 @@ Para las request post, usa el cliente que quieras y tenes que incluir esto en el
 }
 ```
 ## Logica:
-Para la logica de el programa, usé un archivo json con cada palabra y su traduccion en una estructura
+Para la logica de el programa, usé un archivo json con cada palabra y su traduccion en una estructura. Para hacer este archivo, use primero un excel (.csv) y use la funcion `=GOOGLETRANSLATE()` para traducir las palabras. Despues, hay tres archivos:
