@@ -11,11 +11,10 @@ pub struct NewTrad {
     pub ES: String,
 }
 
-// Para uso futuro
-// Idea: Con requests POST hacer que se puedan escribir nuevas traducciones en el .json
 pub fn add_trad(ruta: String, entrada: Json<NewTrad>) {
     let mut traducciones: Vec<read::Word> = if Path::new(&ruta).exists() {
-        let file = File::open(&ruta).expect("No se pudo abrir el JSON");
+        let file = File::open(&ruta)
+            .expect("No se pudo abrir el JSON");
         let reader = BufReader::new(file);
         serde_json::from_reader(reader).unwrap_or_default()
     } else {
@@ -37,6 +36,6 @@ pub fn add_trad(ruta: String, entrada: Json<NewTrad>) {
         .expect("No se pudo abrir para escribir");
 
     let writer = BufWriter::new(file);
-    serde_json::to_writer_pretty(writer, &traducciones).expect("No se pudo escribir el JSON");
-
+    serde_json::to_writer_pretty(writer, &traducciones)
+        .expect("No se pudo escribir el JSON");
 }

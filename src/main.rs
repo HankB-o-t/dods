@@ -5,9 +5,8 @@ use rocket::{post, serde::json::Json};
 
 #[post("/api/add", format = "json", data = "<entrada>")]
 async fn api_add(entrada: Json<write::NewTrad>) -> String {
-    write::add_trad("data/en2es.json".to_string(), entrada);
-
-    format!("PALABRA AGREGADAA")
+        write::add_trad("data/en2es.json".to_string(), entrada);
+        format!("--Se agrego la palabra--");
 }
 
 

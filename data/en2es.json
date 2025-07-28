@@ -49473,5 +49473,20 @@
     "ID": 9895,
     "EN": "scenery",
     "ES": "escenario"
+  },
+  {
+    "ID": 9896,
+    "EN": "bash",
+    "ES": "golpear"
+  },
+  {
+    "ID": 9897,
+    "EN": "caramel",
+    "ES": "caramelo"
+  },
+  {
+    "ID": 9898,
+    "EN": "bathed",
+    "ES": "bañado"
   }
 ]

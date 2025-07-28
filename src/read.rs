@@ -23,6 +23,6 @@ pub fn readFile(palabra: String, dir: String) -> String {
 
     match resultado {
         Some(t) => return t.ES.clone(),
-        None => return "\n--------No se encontro la palabra--------\nChequea la ortografia, o  quizas,  si  la\npalabra es muy de nicho, no va a aparecer\npodes            agregarla           sino\nUsando el comando:\ncurl -X <url> -H 'Content-Type: application/json -d ' \"{\"EN\":\"palabra\", \"ES\":\"traducida\"}\" ".to_string(),
+        None => return "\n--------No se encontro la palabra--------\nChequea la ortografia, o  quizas,  si  la\npalabra es muy de nicho, no va a aparecer\npodes            agregarla           sino\nUsando el comando:\ncurl -X POST <url> -H 'Content-Type: application/json -d ' \"{\"EN\":\"palabra\", \"ES\":\"traducida\"}\" ".to_string(),
     }
 }
